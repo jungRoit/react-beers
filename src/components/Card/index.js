@@ -16,9 +16,9 @@ const Card = ({ beer }) => {
         <div className="card-subtitle">
           {beer.tagline}
         </div>
-        <div className="card-description">
+        <p className="card-description">
           {beer.description}
-        </div>
+        </p>
       </div>
     </div>
   )

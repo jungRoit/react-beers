@@ -4,7 +4,7 @@
   border: 1px solid black;
   margin: 16px 0;
   padding: 16px 24px;
-  max-width: 800px;
+	/* max-width: 800px; */
   background-color: #fff;
   border: 0.3px solid #d3d3d3;
   box-shadow: 0px 2px 4px #d3d3d3;
@@ -14,6 +14,7 @@
 
 .card:hover {
   background-color: #F2F8FD;
+	box-shadow: none;
 }
 
 .card-image-section {
@@ -30,8 +31,8 @@
 }
 
 .image {
-  width: 32px;
-  height: 110px;
+	width: 40px;
+		height: 136px;
 }
 
 .card-title {
@@ -47,4 +48,5 @@
 
 .card-description {
   font-size: 16px;
+	text-overflow: ellipsis;
 }
