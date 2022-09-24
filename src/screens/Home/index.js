@@ -38,7 +38,9 @@ const Home = () => {
 
   return (
     <div className="container">
+      <div className="header">
       <h1>Beers</h1>
+      </div>
       <CardContainer data={beers} isLoading={isLoading} />
       <div className="load-more-section">
         <LoadMoreBtn onClick={loadMoreBeers} />
