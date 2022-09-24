@@ -2,4 +2,11 @@
   display: flex;
   width: 100%;
   flex-direction: column;
+  padding-bottom: 24px;
+  }
+  
+  .load-more-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
 }

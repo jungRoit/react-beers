@@ -1,0 +1,15 @@
+.load-more {
+  display: flex;
+  flex-direction: row;
+  color: #1070C6;
+  cursor: pointer;
+}
+
+.load-more span {
+  margin-right: 8px;
+}
+
+.load-more-icon {
+  width: 16px;
+  height: 16px;
+}
