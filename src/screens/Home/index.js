@@ -16,25 +16,22 @@ const Home = () => {
     const fetchBeers = async () => {
       try {
         const response = await getBeers(ITEMS_PER_PAGE, offset);
-        setBeers(response.data);
+        if (offset === 1) {
+          setBeers(response.data);
+        } else {
+          setBeers([...beers, ...response.data]);
+        }
       } catch (err) {
         setBeers([]);
         setIsLoading(false);
       }
     }
     fetchBeers();
-  }, [])
+  }, [offset])
 
-  const loadMoreBeers = async () => {
-    try {
-      const response = await getBeers(ITEMS_PER_PAGE, offset + 1);
-      setBeers([...beers, ...response.data]);
-      setOffset(offset + 1)
-    } catch (err) {
-    }
+  const loadMoreBeers = () => {
+    setOffset(offset + 1);
   }
-
-  console.log('beers', beers);
 
   return (
     <div className="container">
