@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import CardContainer from "../../components/CardContainer";
 
 import { getBeers } from "../../service/api";
 
@@ -29,27 +30,7 @@ const Home = (props) => {
   return (
     <div className="container">
       <h1>Beers</h1>
-      <div className="cards-container">
-        {beers.map(beer => (
-          <div className="card">
-            <div className="card-image-section">
-              <img src={beer.image_url} className="image" />
-            </div>
-            <div className="card-details-section">
-              <div className="card-title">
-                {beer.name}
-              </div>
-              <div className="card-subtitle">
-                {beer.tagline}
-              </div>
-              <div className="card-description">
-                {beer.description}
-              </div>
-            </div>
-          </div>
-        ))}
-
-      </div>
+      <CardContainer data={beers} />
     </div>
   )
 }
