@@ -15,12 +15,14 @@ const Home = () => {
   useEffect(() => {
     const fetchBeers = async () => {
       try {
+        setIsLoading(true);
         const response = await getBeers(ITEMS_PER_PAGE, offset);
         if (offset === 1) {
           setBeers(response.data);
         } else {
           setBeers([...beers, ...response.data]);
         }
+        setIsLoading(false);
       } catch (err) {
         setBeers([]);
         setIsLoading(false);
