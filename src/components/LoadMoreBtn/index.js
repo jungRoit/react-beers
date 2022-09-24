@@ -6,7 +6,7 @@ import "./style.css";
 const LoadMoreBtn = ({ onClick }) => (
   <div className="load-more" onClick={onClick}>
     <span>Load More</span>
-    <img src={ArrowDown} className="load-more-icon" />
+    <img src={ArrowDown} className="load-more-icon" alt="arrow down icon" />
   </div>
 )
 
