@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
+
 import { getBeers } from "../../service/api";
+
+import './style.css';
 
 const Home = (props) => {
   const [beers, setBeers] = useState([]);
@@ -20,10 +23,33 @@ const Home = (props) => {
     fetchBeers();
   }, [])
 
+  console.log('beers', beers);
+
 
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="container">
+      <h1>Beers</h1>
+      <div className="cards-container">
+        {beers.map(beer => (
+          <div className="card">
+            <div className="card-image-section">
+              <img src={beer.image_url} className="image" />
+            </div>
+            <div className="card-details-section">
+              <div className="card-title">
+                {beer.name}
+              </div>
+              <div className="card-subtitle">
+                {beer.tagline}
+              </div>
+              <div className="card-description">
+                {beer.description}
+              </div>
+            </div>
+          </div>
+        ))}
+
+      </div>
     </div>
   )
 }
