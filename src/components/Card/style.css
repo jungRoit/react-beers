@@ -34,7 +34,7 @@
 
 .image {
 	width: 40px;
-		height: 136px;
+	height: 136px;
 }
 
 .card-title {
@@ -61,6 +61,10 @@
     width: 48%;
   }
 
+  .card-details-section {
+    flex: 3;
+  }
+
   .image {
     width: 32px;
     height: 110px;
@@ -80,4 +84,25 @@
   }
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  .card {
+    max-height: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .card-image-section {
+    flex: 1;
+    margin-bottom: 16px;
+
+  }
+  
+  .card-details-section {
+    flex: 1;
+  }
+  
+  .image {
+    width: 64px;
+    height: 224px;
+  }
+}
