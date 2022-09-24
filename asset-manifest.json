@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-beers/static/css/main.a4589ddf.css",
+    "main.js": "/react-beers/static/js/main.317d3238.js",
+    "static/js/787.7086bde3.chunk.js": "/react-beers/static/js/787.7086bde3.chunk.js",
+    "index.html": "/react-beers/index.html",
+    "main.a4589ddf.css.map": "/react-beers/static/css/main.a4589ddf.css.map",
+    "main.317d3238.js.map": "/react-beers/static/js/main.317d3238.js.map",
+    "787.7086bde3.chunk.js.map": "/react-beers/static/js/787.7086bde3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4589ddf.css",
+    "static/js/main.317d3238.js"
+  ]
+}
